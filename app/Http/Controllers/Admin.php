@@ -18,7 +18,8 @@ class Admin extends Controller
     public function index(): View
     {
         if(Auth::check()) {
-            $admin = Blog::orderBy('created_at', 'DESC')->get();
+            $user_id = Auth::id();
+            $admin = Blog::where('user_id', $user_id)->orderBy('created_at', 'DESC')->get();
 
             return view('admin_home', ['admin' => $admin]);
         } else {
