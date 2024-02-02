@@ -1,0 +1,5 @@
+Client ID
+27477000996-ainaimfvhno45jsms0ulb8fnk4g3gpan.apps.googleusercontent.com
+
+Client Secret
+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
