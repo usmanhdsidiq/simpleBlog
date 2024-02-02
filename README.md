@@ -7,9 +7,11 @@ Simple blog apps with admin page and Google login
 - There is no comment's field for the post
 - There is no multi-level login
 
-## Contact Me
+## About Me
 
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fusmanhdsidiq&tabs=timeline&width=400&height=120&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="pcz24iAb"></script>
+<div class="fb-page" data-href="https://www.facebook.com/usmanhdsidiq" data-tabs="timeline" data-width="400" data-height="120" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/usmanhdsidiq" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/usmanhdsidiq">Usman Hidayatulloh Sidiq</a></blockquote></div>
 
 ##
 
