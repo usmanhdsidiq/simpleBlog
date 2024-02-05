@@ -21,7 +21,7 @@ class Admin extends Controller
             $user_id = Auth::id();
             $admin = Blog::where('user_id', $user_id)->orderBy('created_at', 'DESC')->get();
 
-            return view('admin_home', ['admin' => $admin]);
+            return view('admin/admin_home', ['admin' => $admin]);
         } else {
             abort(403);
         }
@@ -32,7 +32,7 @@ class Admin extends Controller
      */
     public function create(): View
     {
-        return view('admin_create');
+        return view('admin/admin_create');
     }
 
     /**
@@ -57,7 +57,7 @@ class Admin extends Controller
             $input['image'] = "$profileImage";
         }
 
-        Blog::create($input);
+        dd(Blog::create($input));
 
         return redirect()->route('admin.index')->with('success', 'The article has been posted');
     }
@@ -69,7 +69,7 @@ class Admin extends Controller
     {
         $admin = Blog::find($id);
 
-        return view('admin_show', compact('admin'));
+        return view('admin/admin_show', compact('admin'));
     }
 
     /**
@@ -79,7 +79,7 @@ class Admin extends Controller
     {
         $admin = Blog::find($id);
         // $plants = $plant;
-        return view('admin_edit', compact('admin'));
+        return view('admin/admin_edit', compact('admin'));
     }
 
     /**
